@@ -1,0 +1,56 @@
+.currentPage {
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+
+  .title {
+    font-size: 20px;
+    margin: 20px;
+  }
+  .messages {
+    height: 70vh;
+    overflow-y: scroll;
+    background-color: #ebebeb;
+    border-radius: 30px;
+    padding: 10px;
+    .message {
+      text-align: right;
+    }
+    .received_message {
+      text-align: left;
+    }
+    .message,
+    .received_message {
+      font-size: 18px;
+      margin: 10px 5px;
+      span {
+        font-size: 12px;
+        color: black;
+      }
+    }
+  }
+  .send {
+    display: flex;
+    justify-content: space-between;
+
+    textarea {
+      font-size: 18px;
+      resize: none;
+      width: 100%;
+      padding: 5px;
+      margin-left: 20px;
+      border-radius: 10px;
+    }
+    button {
+      width: 120px;
+      font-size: 20px;
+      margin: 0px 20px;
+      padding: 0px 5px;
+      background-color: #757575;
+      color: #ebebeb;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+  }
+}
